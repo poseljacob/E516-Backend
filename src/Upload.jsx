@@ -16,7 +16,7 @@ function Upload() {
     const data = new FormData();
     data.append("file", e.target.files[0]);
     setLoading(true)
-    axios.post("http://3.83.226.56:8080", data).then((resp) => {
+    axios.post("https://faceapi.link", data).then((resp) => {
       setURL(URL.createObjectURL(e.target.files[0]));
       setData(resp.data);
       setLoading(false)
@@ -32,7 +32,7 @@ function Upload() {
       "predicted_age": data['age'],
       "predicted_gender": data['gender']
     }
-    axios.post("http://3.83.226.56:8080/submit", submitData).then((resp) => {
+    axios.post("https://faceapi.link/submit", submitData).then((resp) => {
       console.log(resp.data)
     })
     setAge("")
