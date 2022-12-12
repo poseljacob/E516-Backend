@@ -183,6 +183,22 @@ function Upload() {
           onChange={onImageChange} />
         </label>
       </div>
+      {!url && !loading && (
+        <div>
+      <div >
+      <div>
+      Example Image: 
+      </div>
+      <img style = {{
+      maxWidth: "6rem",
+      maxHeight: "6rem"
+    }} src = '/IMG_3614.jpg'/>
+    </div>
+    <div>
+      <p style = {{fontSize: "10px"}}>Pleae note resolution, orientation and cropping</p>
+    </div>
+    </div>
+      )}
       <div>
         <img style={img_style} src={url} />
         {url && (
