@@ -195,7 +195,7 @@ function Upload() {
     }} src = '/IMG_3614.jpg'/>
     </div>
     <div>
-      <p style = {{fontSize: "10px"}}>Pleae note resolution, orientation and cropping</p>
+      <p style = {{fontSize: "10px"}}>Please note resolution, orientation and cropping</p>
     </div>
     </div>
       )}
