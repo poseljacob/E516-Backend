@@ -1,3 +1,5 @@
+Backend code in branch `master`, frontend code in branch `frontend`
+
 to begin using the `api` backend code:
 
 ```commandline
@@ -12,3 +14,4 @@ to run the backend app:
 ```commandline
 $ python main.py
 ```
+
